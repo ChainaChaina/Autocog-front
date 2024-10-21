@@ -23,16 +23,19 @@ export default function AdminPanelLayout({
           !settings.disabled && (!getOpenState() ? "lg:ml-[90px]" : "lg:ml-72")
         )}
       >
+        {/* // This is where the content of the page is rendered */}
         {children}
       </main>
-      <footer
+
+      {/* TOOK OFF THE FOOTER */}
+      {/* <footer
         className={cn(
           "transition-[margin-left] ease-in-out duration-300",
           !settings.disabled && (!getOpenState() ? "lg:ml-[90px]" : "lg:ml-72")
         )}
       >
         <Footer />
-      </footer>
+      </footer> */}
     </>
   );
 }
